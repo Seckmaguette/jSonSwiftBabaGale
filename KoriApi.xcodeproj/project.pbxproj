@@ -7,18 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		022C3EDB2985D75E001AE48F /* DetailsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022C3EDA2985D75E001AE48F /* DetailsViews.swift */; };
+		02390A172983BFF100AFA032 /* kori.json in Resources */ = {isa = PBXBuildFile; fileRef = 02390A162983BFF100AFA032 /* kori.json */; };
+		02390A192983D8A600AFA032 /* signUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02390A182983D8A600AFA032 /* signUp.swift */; };
 		023A45122982D01700360944 /* KoriApiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023A45112982D01700360944 /* KoriApiApp.swift */; };
 		023A45142982D01700360944 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023A45132982D01700360944 /* ContentView.swift */; };
 		023A45162982D01800360944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 023A45152982D01800360944 /* Assets.xcassets */; };
 		023A45192982D01800360944 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 023A45182982D01800360944 /* Preview Assets.xcassets */; };
+		023A45252982D0E500360944 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023A45242982D0E500360944 /* Model.swift */; };
+		023A45272982D38B00360944 /* fetchApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023A45262982D38B00360944 /* fetchApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		022C3EDA2985D75E001AE48F /* DetailsViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViews.swift; sourceTree = "<group>"; };
+		02390A162983BFF100AFA032 /* kori.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = kori.json; sourceTree = "<group>"; };
+		02390A182983D8A600AFA032 /* signUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUp.swift; sourceTree = "<group>"; };
 		023A450E2982D01700360944 /* KoriApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoriApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		023A45112982D01700360944 /* KoriApiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoriApiApp.swift; sourceTree = "<group>"; };
 		023A45132982D01700360944 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		023A45152982D01800360944 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		023A45182982D01800360944 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		023A45242982D0E500360944 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		023A45262982D38B00360944 /* fetchApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetchApi.swift; sourceTree = "<group>"; };
+		023A45282982D6D500360944 /* jsonapi.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = jsonapi.geojson; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +43,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		021EC34B29831434001B4737 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				023A45242982D0E500360944 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		021EC34D2983145F001B4737 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				023A45262982D38B00360944 /* fetchApi.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		021EC34E2983147D001B4737 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				023A45132982D01700360944 /* ContentView.swift */,
+				02390A182983D8A600AFA032 /* signUp.swift */,
+				022C3EDA2985D75E001AE48F /* DetailsViews.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		023A45052982D01600360944 = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +88,14 @@
 		023A45102982D01700360944 /* KoriApi */ = {
 			isa = PBXGroup;
 			children = (
+				021EC34E2983147D001B4737 /* View */,
+				021EC34D2983145F001B4737 /* ViewModel */,
+				021EC34B29831434001B4737 /* Model */,
+				023A45282982D6D500360944 /* jsonapi.geojson */,
 				023A45112982D01700360944 /* KoriApiApp.swift */,
-				023A45132982D01700360944 /* ContentView.swift */,
 				023A45152982D01800360944 /* Assets.xcassets */,
 				023A45172982D01800360944 /* Preview Content */,
+				02390A162983BFF100AFA032 /* kori.json */,
 			);
 			path = KoriApi;
 			sourceTree = "<group>";
@@ -126,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				023A45192982D01800360944 /* Preview Assets.xcassets in Resources */,
+				02390A172983BFF100AFA032 /* kori.json in Resources */,
 				023A45162982D01800360944 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02390A192983D8A600AFA032 /* signUp.swift in Sources */,
+				022C3EDB2985D75E001AE48F /* DetailsViews.swift in Sources */,
 				023A45142982D01700360944 /* ContentView.swift in Sources */,
+				023A45272982D38B00360944 /* fetchApi.swift in Sources */,
 				023A45122982D01700360944 /* KoriApiApp.swift in Sources */,
+				023A45252982D0E500360944 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
